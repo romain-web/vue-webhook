@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import { SlackGenerators } from './generator/slack'
+import { SlackGenerators } from './generators/slack'
 
 export class Webhook {
   constructor (vm) {
