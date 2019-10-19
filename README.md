@@ -1,5 +1,7 @@
 # Vue Webhook
 
+⚠️ this project is 🚧 WIP (Work in progress)
+
 ## Project setup
 ```
 npm install
