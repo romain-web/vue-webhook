@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import { SlackGenerators } from './generators/slack'
+import { SlackGenerator } from './generators/slack'
 
 export class Webhook {
   constructor (vm) {
@@ -9,7 +9,7 @@ export class Webhook {
 
   push (message, options) {
     const url = 'https://hooks.slack.com/services/{YOUR_WEBHOOK}'
-    const data = new SlackGenerators({
+    const data = new SlackGenerator({
       text: message
     }).getJson()
 
@@ -22,3 +22,5 @@ export class Webhook {
     })
   }
 }
+
+export default Webhook

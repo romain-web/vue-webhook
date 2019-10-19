@@ -23,19 +23,19 @@
     "build": "rollup --config rollup.config.js",
     "lint": "eslint --fix",
     "test:eslint": "eslint --ext .js src/**/*.js",
-    "test:unit": "jest --notify --config=tests/unit/config.js --passWithNoTests",
+    "test:unit": "jest --notify --config=jest.config.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "axios": "^0.19.0"
+    "axios": "^0.19.0",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.9.0",
-    "core-js": "^3.1.2",
     "eslint": "^6.5.1",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
@@ -67,6 +67,11 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
+    }
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]s?$": "babel-jest"
     }
   }
 }

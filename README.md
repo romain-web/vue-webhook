@@ -1,13 +1,8 @@
-# vue-webhook
+# Vue Webhook
 
 ## Project setup
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
 ```
 
 ### Compiles and minifies for production
@@ -17,13 +12,11 @@ npm run build
 
 ### Run your tests
 ```
-npm run test
+npm run test:eslint
+npm run test:unit
 ```
 
 ### Lints and fixes files
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
